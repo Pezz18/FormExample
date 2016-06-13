@@ -1,0 +1,322 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  ========================================
+  Custom styles
+  ========================================
+*/
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+
+/*
+  ========================================
+  General & Column
+  ========================================
+*/
+
+body {
+	font-family: 'Palanquin', sans-serif;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+p {
+  font-size: 12px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 960px;
+  padding-left: 70px;
+  padding-right: 40px;
+}
+
+.col-1, .col-2 {
+  padding-left: 15px;
+  padding-right: 15px;
+  display: inline-block;
+  vertical-align: top;
+}
+.col-1 {
+  width: 70%;
+}
+.col-2 {
+  width: 25.5%;
+}
+
+/*
+  ========================================
+  Header
+  ========================================
+*/
+
+
+.header nav li {
+	display: inline-block;
+	margin-top: 50px;
+  margin-right: 10px;
+}
+
+.header nav img {
+	height: 45%;
+	width: 45%;
+}
+
+.header nav li:nth-child(2) {
+	font-weight: bold;
+	margin-left: 420px;
+}
+
+.header a {
+  text-decoration: none;
+  color: black;
+}
+
+
+/*
+  ========================================
+  Form Style
+  ========================================
+*/
+
+.form-box {
+	border: 1px solid #d8d8d8;
+  box-shadow: 0px 3px 8px rgb(100,100,100);
+
+	width: 805px;
+	height: 670px;
+	margin: 15px 0 50px 0;
+  padding: 40px 0 0 8px;
+
+}
+
+.sign-up {
+	border-right: 1px solid #d8d8d8;
+	float: left;
+	height: 500px;
+	margin-right: 20px;
+	padding-left: 55px;
+	
+}
+
+.sign-up h1 {
+	font-weight: 100;
+  line-height: 45px;
+}
+
+.sign-up a{
+  color: #45cae6;
+}
+
+form {
+  padding-top: 40px;
+
+}
+
+input {
+  font-family: 'Palanquin', sans-serif;
+  display: block;
+  width: 50%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border: solid #d8d8d8 1px;
+  border-radius: 3px;
+  box-shadow: none;
+
+}
+
+.remember {
+  margin-top: 10px;
+  display: inline-block;
+  width: 3%;
+  
+}
+
+button {
+  margin: 20px 0 20px 0;
+  background-color: #45cae6;
+  color: white;
+  border: solid #45cae6 1px;
+  border-radius: 2px;
+  width: 100px;
+  height: 35px;
+  cursor: pointer;
+}
+
+
+
+/*
+  ========================================
+  Sign Up Information
+  ========================================
+*/
+
+.info {
+  float: left;
+  background-color: #f6f6f6;
+  height: 500px;
+  padding: 20px 20px 20px 30px;
+  margin: 0;
+  color: #5f5f5f;
+}
+
+.info li {
+  font-size: 10pt;
+  list-style: disc;
+  margin: 0 0 15px 10px;
+}
+
+    
+.info h3 {
+  padding-bottom: 12px;
+  letter-spacing: 1px;
+  font-size: 18px ;
+}
+
+.info a {
+  color: #5f5f5f;
+}
+
+/*
+  ========================================
+  Footer
+  ========================================
+*/
+
+
+.footer nav li{
+  display: inline-block;
+  margin-right: 20px;
+  padding-right: 20px;
+  border-right: solid 1px #5f5f5f;
+  color: #5f5f5f;
+  font-size: 14px;
+ }
+
+ .footer li:last-child {
+  border: none;
+ }
+ .footer ul {
+  margin-top: 20px;
+  text-align: center;
+ }
+
+ .footer a {
+  color: #5f5f5f;
+  text-decoration: none;
+ }
+
+ .footer a:hover {
+  text-decoration: underline;
+ }
+
+ .image img {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 10%;
+  width: 10%;
+  vertical-align: middle;
+  margin: 30px;
+}
+
+.image {
+  text-align: center;
+}
+
+.small {
+  width: 100%;
+  text-align: center;
+}
+.small li {
+  display: inline-block;
+  font-size: 12px;
+  margin-bottom: 20px;
+  color: #5f5f5f;  
+  padding-right: 20px;
+  border-right: solid 1px #5f5f5f;
+}
+
+.small li:nth-child(3) {
+  border: none;
+ }
